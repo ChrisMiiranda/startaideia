@@ -1,7 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:teste_startaiedeia/res/custom_colors.dart';
 import 'package:teste_startaiedeia/screens/home_screen.dart';
 import 'package:teste_startaiedeia/utils/fire_auth.dart';
 import 'package:teste_startaiedeia/utils/validator.dart';
@@ -43,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextFormField(
                     controller: controllerSenha,
                     obscureText: true,
-                    decoration: const InputDecoration(label: Text('E-mail')),
+                    decoration: const InputDecoration(label: Text('Senha')),
                     validator: (value) =>
                         Validator.validatePassword(password: value!),
                   ),
@@ -81,34 +79,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             }
                           },
                           child: const Text('Login')),
-                      TextButton(
-                          onPressed: () async {
-                            if (_formKey.currentState!.validate()) {
-                              User? user =
-                              await FireAuth.registerUsingEmailPassword(
-                                  email: controllerEmail.text,
-                                  password: controllerSenha.text,
-                                  name: 'Victor Bores Pereira');
-                              if (user != null) {
-                                showDialog(
-                                    context: context,
-                                    builder: (context) => const AlertDialog(
-                                      title: Text('Sucesso'),
-                                      content: Text(
-                                          'Usuário Registrado com sucesso'),
-                                    ));
-                              } else {
-                                showDialog(
-                                    context: context,
-                                    builder: (context) => const AlertDialog(
-                                      title: Text('Erro'),
-                                      content:
-                                      Text('Usuário Não Registrado'),
-                                    ));
-                              }
-                            }
-                          },
-                          child: const Text('Registro')),
                     ],
                   ),
                 ],

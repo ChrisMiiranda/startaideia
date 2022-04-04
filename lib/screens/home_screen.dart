@@ -115,11 +115,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(height: 16.0),
-                Container(
-                  height: 200,
-                    width: 200,
+                Expanded(
                     child: WebView(
-                  initialUrl: 'flutter.dev',
+                  initialUrl: 'https://google.com/',
                 ))
               ],
             ),
