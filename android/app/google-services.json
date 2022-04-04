@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "798445289114",
+    "project_id": "app-teste-startaideia",
+    "storage_bucket": "app-teste-startaideia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798445289114:android:dc34d81214893eae1c6923",
+        "android_client_info": {
+          "package_name": "com.startaideia.teste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798445289114-m8lqdnr1ps6ej8egq850v91gmrphc9o2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.startaideia.teste",
+            "certificate_hash": "c1a2e8cd0c3c46944a86074f4aab93d998e422e5"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrexwCn9MgZI3uxR6RLs6ks-ywlH52dyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
