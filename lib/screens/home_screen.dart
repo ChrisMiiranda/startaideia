@@ -116,9 +116,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 SizedBox(height: 16.0),
                 Expanded(
-                    child: WebView(
+                  flex: 5,
+                    child: Card(
+                      child: WebView(
                   initialUrl: 'https://google.com/',
-                ))
+                ),
+                    ))
               ],
             ),
           ),
